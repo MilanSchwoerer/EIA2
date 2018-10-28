@@ -467,6 +467,7 @@ let r1 = {
             s.border = "solid black";
             s.position = "absolute";
             s.backgroundColor = _color;
+            s.color = "white";
             s.width = 150 + "px";
             s.height = 200 + "px";
             s.left = (Eingabe + 1) * 160 + "px"; 
