@@ -465,15 +465,15 @@ let r1 = {
             
             let s: CSSStyleDeclaration = div.style;
             s.border = "solid black";
-            s.position = "absolute";
+            s.position = "absolute"; 
             s.backgroundColor = _color;
             s.color = "white";
             s.width = 150 + "px";
-            s.height = 250 + "px";
+            s.height = 250 + "px"; 
             s.left = (Eingabe + 1) * 160 + "px"; 
             s.bottom = 130 + "px";
             s.textAlign = "center";
-            s.borderRadius = 20 + "px";
+            s.borderRadius = 20 + "px"; 
 } 
 }   
 document.addEventListener("DOMContentLoaded", (Uno))    
