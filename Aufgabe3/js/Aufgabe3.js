@@ -1,16 +1,10 @@
-namespace Aufgabe2new {
-    document.addEventListener("DOMContentLoaded", uno)
-    
+var Aufgabe2new;
+(function (Aufgabe2new) {
+    document.addEventListener("DOMContentLoaded", uno);
     function uno() {
-
-        let cardNumber: number;
-        let ChooseCards: string = prompt("Anzahl der gewünschten Handkarten eingeben");
+        let cardNumber;
+        let ChooseCards = prompt("Anzahl der gewünschten Handkarten eingeben");
         cardNumber = Number(ChooseCards);
-
-        interface Card {
-            color: string;
-            value: string;
-        }
         let b1 = {
             color: "blue",
             value: "0",
@@ -454,16 +448,14 @@ namespace Aufgabe2new {
             deck.splice(randomCard, 1);
             continue;
         }
-        function random(Zufall: number) { return Math.floor(Math.random() * Math.floor(Zufall)) }
-
-        function placeDiv(_color: string, Karte: string, Eingabe: number): void {
-            let div: HTMLDivElement = document.createElement("div");
+        function random(Zufall) { return Math.floor(Math.random() * Math.floor(Zufall)); }
+        function placeDiv(_color, Karte, Eingabe) {
+            let div = document.createElement("div");
             document.body.appendChild(div);
-
+            div.setAttribute("class", "cards");
             div.setAttribute("id", "a" + Eingabe);
             document.getElementById("a" + Eingabe).innerHTML += Karte;
-
-            let s: CSSStyleDeclaration = div.style;
+            let s = div.style;
             s.border = "solid black";
             s.position = "absolute";
             s.backgroundColor = _color;
@@ -476,6 +468,5 @@ namespace Aufgabe2new {
             s.borderRadius = 20 + "px";
         }
     }
-
-
-}
+})(Aufgabe2new || (Aufgabe2new = {}));
+//# sourceMappingURL=Aufgabe3.js.map

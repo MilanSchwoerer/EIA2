@@ -1,6 +1,6 @@
 namespace Aufgabe2new {
     document.addEventListener("DOMContentLoaded", uno)
-    
+
     function uno() {
 
         let cardNumber: number;
@@ -459,7 +459,7 @@ namespace Aufgabe2new {
         function placeDiv(_color: string, Karte: string, Eingabe: number): void {
             let div: HTMLDivElement = document.createElement("div");
             document.body.appendChild(div);
-
+            div.setAttribute("class", "cards");
             div.setAttribute("id", "a" + Eingabe);
             document.getElementById("a" + Eingabe).innerHTML += Karte;
 
@@ -475,7 +475,38 @@ namespace Aufgabe2new {
             s.textAlign = "center";
             s.borderRadius = 20 + "px";
         }
+    
+
+    function take(_cards: number): void {
+        if (deck.length > 0) {
+            for (let i: number = 0; i < _cards; i++) {
+                let maxNumber: number = deck.length;
+                let randomNum: number = getRandom(maxNumber);
+                let : string = deck.splice(randomNum, 1)[0];
+                hand.push(card);
+            }
+        }
     }
 
+    function takeListener(): void {
+        document.getElementById("deck").addEventListener("click", takeEvent);
+        document.addEventListener("keydown", space);
+    }
 
+    takeListener();
+    function takeEvent(): void {
+        take(1);
+        discard();
+        createCards(hand);
+        put();
+    }
+
+    function space(_event: KeyboardEvent): void {
+        var keyCode: number = _event.keyCode;
+        if (keyCode == 32) {
+            takeEvent();
+        }
+    }
+
+}
 }

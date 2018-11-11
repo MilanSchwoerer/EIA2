@@ -1,5 +1,5 @@
 
-div {
+/*#a0 {
 border: "solid black";
 position: "absolute";
 backgroundColor:  _color;
@@ -10,7 +10,7 @@ left: (Eingabe + 1) * 160px;
 bottom: 130px;
 textAlign: center;
 borderRadius: 20px;	
-}
+} */
 
 .Ablage {
 	border: thin solid black;

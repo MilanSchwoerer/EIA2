@@ -1,9 +1,10 @@
 var Aufgabe2new;
 (function (Aufgabe2new) {
-    function Uno() {
-        let CardNumber;
+    document.addEventListener("DOMContentLoaded", uno);
+    function uno() {
+        let cardNumber;
         let ChooseCards = prompt("Anzahl der gewünschten Handkarten eingeben");
-        CardNumber = Number(ChooseCards);
+        cardNumber = Number(ChooseCards);
         let b1 = {
             color: "blue",
             value: "0",
@@ -441,7 +442,7 @@ var Aufgabe2new;
             g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12, g13, g14, g15, g16, g17, g18, g19, g20, g21, g22, g23, g24, g25,
             y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12, y13, y14, y15, y16, y17, y18, y19, y20, y21, y22, y23, y24, y25,
             k1, k2, k3, k4, k5, k6, k7, k8];
-        for (let i = 0; i < CardNumber; i++) {
+        for (let i = 0; i < cardNumber; i++) {
             let randomCard = random(deck.length);
             placeDiv(deck[randomCard].color, deck[randomCard].value, i);
             deck.splice(randomCard, 1);
@@ -466,6 +467,5 @@ var Aufgabe2new;
             s.borderRadius = 20 + "px";
         }
     }
-    document.addEventListener("DOMContentLoaded", (Uno));
 })(Aufgabe2new || (Aufgabe2new = {}));
 //# sourceMappingURL=Aufgabe2.js.map
