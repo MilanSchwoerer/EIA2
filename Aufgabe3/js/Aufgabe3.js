@@ -26,7 +26,7 @@ var Aufgabe3;
         let button = document.getElementById("button");
         button.addEventListener("click", sort);
         let pull = document.getElementById("draw");
-        pull.addEventListener("click", add);
+        pull.addEventListener("click", draw);
     }
     function randomCard(n) {
         for (let random = n; random > 0; random--) {
@@ -35,13 +35,13 @@ var Aufgabe3;
             cards.splice(r, 1);
         }
     }
-    function add() {
+    function draw() {
         randomCard(1);
         handcards();
     }
     function pressKeyboard(_event) {
         if (_event.keyCode == 32) {
-            add();
+            draw();
         }
     }
     function handcards() {

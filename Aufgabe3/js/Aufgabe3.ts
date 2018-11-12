@@ -40,7 +40,7 @@ namespace Aufgabe3 {
         button.addEventListener("click", sort);
 
         let pull: HTMLElement = document.getElementById("draw");
-        pull.addEventListener("click", add);
+        pull.addEventListener("click", draw);
     }
 
     function randomCard(n: number): void {
@@ -51,14 +51,14 @@ namespace Aufgabe3 {
         }
     }
 
-    function add(): void {
+    function draw(): void {
         randomCard(1);
         handcards();
     }
 
     function pressKeyboard(_event: KeyboardEvent): void {
         if (_event.keyCode == 32) {
-            add();
+            draw();
         }
     }
 
