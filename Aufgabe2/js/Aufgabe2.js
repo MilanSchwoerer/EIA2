@@ -3,47 +3,47 @@ var Aufgabe2new;
     document.addEventListener("DOMContentLoaded", uno);
     function uno() {
         let cardNumber;
-        let ChooseCards = prompt("Anzahl der gewünschten Handkarten eingeben");
-        cardNumber = Number(ChooseCards);
+        let chooseCards = prompt("Anzahl der gewünschten Handkarten eingeben");
+        cardNumber = Number(chooseCards);
         let b1 = {
             color: "blue",
-            value: "0",
+            value: "0"
         };
         let b2 = {
             color: "blue",
-            value: "1",
+            value: "1"
         };
         let b3 = {
             color: "blue",
-            value: "2",
+            value: "2"
         };
         let b4 = {
             color: "blue",
-            value: "3",
+            value: "3"
         };
         let b5 = {
             color: "blue",
-            value: "4",
+            value: "4"
         };
         let b6 = {
             color: "blue",
-            value: "5",
+            value: "5"
         };
         let b7 = {
             color: "blue",
-            value: "6",
+            value: "6"
         };
         let b8 = {
             color: "blue",
-            value: "7",
+            value: "7"
         };
         let b9 = {
             color: "blue",
-            value: "8",
+            value: "8"
         };
         let b10 = {
             color: "blue",
-            value: "9",
+            value: "9"
         };
         let b11 = {
             color: "blue",
@@ -51,47 +51,47 @@ var Aufgabe2new;
         };
         let b12 = {
             color: "blue",
-            value: "reverse",
+            value: "reverse"
         };
         let b13 = {
             color: "blue",
-            value: "missturn",
+            value: "missturn"
         };
         let b14 = {
             color: "blue",
-            value: "1",
+            value: "1"
         };
         let b15 = {
             color: "blue",
-            value: "2",
+            value: "2"
         };
         let b16 = {
             color: "blue",
-            value: "3",
+            value: "3"
         };
         let b17 = {
             color: "blue",
-            value: "4",
+            value: "4"
         };
         let b18 = {
             color: "blue",
-            value: "5",
+            value: "5"
         };
         let b19 = {
             color: "blue",
-            value: "6",
+            value: "6"
         };
         let b20 = {
             color: "blue",
-            value: "7",
+            value: "7"
         };
         let b21 = {
             color: "blue",
-            value: "8",
+            value: "8"
         };
         let b22 = {
             color: "blue",
-            value: "9",
+            value: "9"
         };
         let b23 = {
             color: "blue",
@@ -99,51 +99,51 @@ var Aufgabe2new;
         };
         let b24 = {
             color: "blue",
-            value: "reverse",
+            value: "reverse"
         };
         let b25 = {
             color: "blue",
-            value: "missturn",
+            value: "missturn"
         };
         let r1 = {
             color: "red",
-            value: "0",
+            value: "0"
         };
         let r2 = {
             color: "red",
-            value: "1",
+            value: "1"
         };
         let r3 = {
             color: "red",
-            value: "2",
+            value: "2"
         };
         let r4 = {
             color: "red",
-            value: "3",
+            value: "3"
         };
         let r5 = {
             color: "red",
-            value: "4",
+            value: "4"
         };
         let r6 = {
             color: "red",
-            value: "5",
+            value: "5"
         };
         let r7 = {
             color: "red",
-            value: "6",
+            value: "6"
         };
         let r8 = {
             color: "red",
-            value: "7",
+            value: "7"
         };
         let r9 = {
             color: "red",
-            value: "8",
+            value: "8"
         };
         let r10 = {
             color: "red",
-            value: "9",
+            value: "9"
         };
         let r11 = {
             color: "red",
@@ -151,47 +151,47 @@ var Aufgabe2new;
         };
         let r12 = {
             color: "red",
-            value: "reverse",
+            value: "reverse"
         };
         let r13 = {
             color: "red",
-            value: "missturn",
+            value: "missturn"
         };
         let r14 = {
             color: "red",
-            value: "1",
+            value: "1"
         };
         let r15 = {
             color: "red",
-            value: "2",
+            value: "2"
         };
         let r16 = {
             color: "red",
-            value: "3",
+            value: "3"
         };
         let r17 = {
             color: "red",
-            value: "4",
+            value: "4"
         };
         let r18 = {
             color: "red",
-            value: "5",
+            value: "5"
         };
         let r19 = {
             color: "red",
-            value: "6",
+            value: "6"
         };
         let r20 = {
             color: "red",
-            value: "7",
+            value: "7"
         };
         let r21 = {
             color: "red",
-            value: "8",
+            value: "8"
         };
         let r22 = {
             color: "red",
-            value: "9",
+            value: "9"
         };
         let r23 = {
             color: "red",
@@ -199,51 +199,51 @@ var Aufgabe2new;
         };
         let r24 = {
             color: "red",
-            value: "reverse",
+            value: "reverse"
         };
         let r25 = {
             color: "red",
-            value: "missturn",
+            value: "missturn"
         };
         let y1 = {
             color: "yellow",
-            value: "0",
+            value: "0"
         };
         let y2 = {
             color: "yellow",
-            value: "1",
+            value: "1"
         };
         let y3 = {
             color: "yellow",
-            value: "2",
+            value: "2"
         };
         let y4 = {
             color: "yellow",
-            value: "3",
+            value: "3"
         };
         let y5 = {
             color: "yellow",
-            value: "4",
+            value: "4"
         };
         let y6 = {
             color: "yellow",
-            value: "5",
+            value: "5"
         };
         let y7 = {
             color: "yellow",
-            value: "6",
+            value: "6"
         };
         let y8 = {
             color: "yellow",
-            value: "7",
+            value: "7"
         };
         let y9 = {
             color: "yellow",
-            value: "8",
+            value: "8"
         };
         let y10 = {
             color: "yellow",
-            value: "9",
+            value: "9"
         };
         let y11 = {
             color: "yellow",
@@ -251,47 +251,47 @@ var Aufgabe2new;
         };
         let y12 = {
             color: "yellow",
-            value: "reverse",
+            value: "reverse"
         };
         let y13 = {
             color: "yellow",
-            value: "missturn",
+            value: "missturn"
         };
         let y14 = {
             color: "yellow",
-            value: "1",
+            value: "1"
         };
         let y15 = {
             color: "yellow",
-            value: "2",
+            value: "2"
         };
         let y16 = {
             color: "yellow",
-            value: "3",
+            value: "3"
         };
         let y17 = {
             color: "yellow",
-            value: "4",
+            value: "4"
         };
         let y18 = {
             color: "yellow",
-            value: "5",
+            value: "5"
         };
         let y19 = {
             color: "yellow",
-            value: "6",
+            value: "6"
         };
         let y20 = {
             color: "yellow",
-            value: "7",
+            value: "7"
         };
         let y21 = {
             color: "yellow",
-            value: "8",
+            value: "8"
         };
         let y22 = {
             color: "yellow",
-            value: "9",
+            value: "9"
         };
         let y23 = {
             color: "yellow",
@@ -299,51 +299,51 @@ var Aufgabe2new;
         };
         let y24 = {
             color: "yellow",
-            value: "reverse",
+            value: "reverse"
         };
         let y25 = {
             color: "yellow",
-            value: "missturn",
+            value: "missturn"
         };
         let g1 = {
             color: "green",
-            value: "0",
+            value: "0"
         };
         let g2 = {
             color: "green",
-            value: "1",
+            value: "1"
         };
         let g3 = {
             color: "green",
-            value: "2",
+            value: "2"
         };
         let g4 = {
             color: "green",
-            value: "3",
+            value: "3"
         };
         let g5 = {
             color: "green",
-            value: "4",
+            value: "4"
         };
         let g6 = {
             color: "green",
-            value: "5",
+            value: "5"
         };
         let g7 = {
             color: "green",
-            value: "6",
+            value: "6"
         };
         let g8 = {
             color: "green",
-            value: "7",
+            value: "7"
         };
         let g9 = {
             color: "green",
-            value: "8",
+            value: "8"
         };
         let g10 = {
             color: "green",
-            value: "9",
+            value: "9"
         };
         let g11 = {
             color: "green",
@@ -351,47 +351,47 @@ var Aufgabe2new;
         };
         let g12 = {
             color: "green",
-            value: "reverse",
+            value: "reverse"
         };
         let g13 = {
             color: "green",
-            value: "missturn",
+            value: "missturn"
         };
         let g14 = {
             color: "green",
-            value: "1",
+            value: "1"
         };
         let g15 = {
             color: "green",
-            value: "2",
+            value: "2"
         };
         let g16 = {
             color: "green",
-            value: "3",
+            value: "3"
         };
         let g17 = {
             color: "green",
-            value: "4",
+            value: "4"
         };
         let g18 = {
             color: "green",
-            value: "5",
+            value: "5"
         };
         let g19 = {
             color: "green",
-            value: "6",
+            value: "6"
         };
         let g20 = {
             color: "green",
-            value: "7",
+            value: "7"
         };
         let g21 = {
             color: "green",
-            value: "8",
+            value: "8"
         };
         let g22 = {
             color: "green",
-            value: "9",
+            value: "9"
         };
         let g23 = {
             color: "green",
@@ -399,43 +399,43 @@ var Aufgabe2new;
         };
         let g24 = {
             color: "green",
-            value: "reverse",
+            value: "reverse"
         };
         let g25 = {
             color: "green",
-            value: "missturn",
+            value: "missturn"
         };
         let k1 = {
             color: "black",
-            value: "Farbwunsch",
+            value: "Farbwunsch"
         };
         let k2 = {
             color: "black",
-            value: "Farbwunsch",
+            value: "Farbwunsch"
         };
         let k3 = {
             color: "black",
-            value: "Farbwunsch",
+            value: "Farbwunsch"
         };
         let k4 = {
             color: "black",
-            value: "Farbwunsch",
+            value: "Farbwunsch"
         };
         let k5 = {
             color: "black",
-            value: "+4",
+            value: "+4"
         };
         let k6 = {
             color: "black",
-            value: "+4",
+            value: "+4"
         };
         let k7 = {
             color: "black",
-            value: "+4",
+            value: "+4"
         };
         let k8 = {
             color: "black",
-            value: "+4",
+            value: "+4"
         };
         let deck = [r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23, r24, r25,
             b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24, b25,
@@ -448,23 +448,17 @@ var Aufgabe2new;
             deck.splice(randomCard, 1);
             continue;
         }
-        function random(Zufall) { return Math.floor(Math.random() * Math.floor(Zufall)); }
-        function placeDiv(_color, Karte, Eingabe) {
+        function random(zufall) {
+            return Math.floor(Math.random() * Math.floor(zufall));
+        }
+        function placeDiv(_color, karte, eingabe) {
             let div = document.createElement("div");
             document.body.appendChild(div);
-            div.setAttribute("id", "a" + Eingabe);
-            document.getElementById("a" + Eingabe).innerHTML += Karte;
+            div.setAttribute("id", "a" + eingabe);
+            document.getElementById("a" + eingabe).innerHTML += karte;
             let s = div.style;
-            s.border = "solid black";
-            s.position = "absolute";
             s.backgroundColor = _color;
-            s.color = "white";
-            s.width = 150 + "px";
-            s.height = 250 + "px";
-            s.left = (Eingabe + 1) * 160 + "px";
-            s.bottom = 130 + "px";
-            s.textAlign = "center";
-            s.borderRadius = 20 + "px";
+            s.left = (eingabe + 1) * 160 + "px";
         }
     }
 })(Aufgabe2new || (Aufgabe2new = {}));

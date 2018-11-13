@@ -1,16 +1,14 @@
 
-/*#a0 {
-border: "solid black";
-position: "absolute";
-backgroundColor:  _color;
-color: "white";
+.Aufnahme ~ div {
+border: solid black;
+position: absolute;
+color: white;
 width: 150px;
 height: 250px;
-left: (Eingabe + 1) * 160px; 
 bottom: 130px;
-textAlign: center;
-borderRadius: 20px;	
-} */
+text-align: center;
+border-radius: 20px;	
+} 
 
 .Ablage {
 	border: thin solid black;

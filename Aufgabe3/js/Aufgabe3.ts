@@ -3,34 +3,34 @@ namespace Aufgabe3 {
     document.addEventListener("keypress", pressKeyboard);
 
 
-    interface card {
+    interface Card {
         color: string;
         value: string;
     }
 
-    
+
     let colors: string[] = ["red", "blue", "green", "yellow"];
     let values: string[] = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "+2", "x", "<-->"];
-    let cards: card[] = [{ color: "red", value: "0" }, { color: "blue", value: "0" }, { color: "green", value: "0" }, { color: "yellow", value: "0" },
+    let cards: Card[] = [{ color: "red", value: "0" }, { color: "blue", value: "0" }, { color: "green", value: "0" }, { color: "yellow", value: "0" },
         { color: "black", value: "+4" }, { color: "black", value: "+4" }, { color: "black", value: "+4" }, { color: "black", value: "+4" },
         { color: "black", value: "Wish" }, { color: "black", value: "Wish" }, { color: "black", value: "Wish" }, { color: "black", value: "Wish" }];
-    let place: card[] = [];
+    let place: Card[] = [];
 
     for (let i: number = 0; i < colors.length; i++) {
         for (let a: number = 0; a < values.length; a++) {
             for (let z: number = 0; z < 2; z++) {
-                let card: card = { color: colors[i], value: values[a] };
+                let card: Card = { color: colors[i], value: values[a] };
                 cards.push(card);
             }
         }
     }
     console.log(cards);
 
-    let displayhand: card[] = [];
+    let displayhand: Card[] = [];
 
-    
+
     function Anzahl(): void {
-        var cardNumber: string = prompt("Anzahl der gewünschten Handkarten eingeben");
+        var cardNumber: string = prompt("Anzahl der gewÃ¼nschten Handkarten eingeben");
         let n: number = parseInt(cardNumber);
 
         randomCard(n);
@@ -90,7 +90,7 @@ namespace Aufgabe3 {
 
     function sort(): void {
         document.getElementById("displayhand").innerHTML = "";
-        displayhand.sort(function(a: card, b: card): number {
+        displayhand.sort(function(a: Card, b: Card): number {
             if (a.color > b.color) {
                 return 1;
             }
@@ -108,4 +108,4 @@ namespace Aufgabe3 {
 
         console.log(displayhand);
         handcards();
-    } }
+    }}

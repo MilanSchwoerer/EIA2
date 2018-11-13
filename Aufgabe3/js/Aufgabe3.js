@@ -19,7 +19,7 @@ var Aufgabe3;
     console.log(cards);
     let displayhand = [];
     function Anzahl() {
-        var cardNumber = prompt("Anzahl der gew�nschten Handkarten eingeben");
+        var cardNumber = prompt("Anzahl der gewünschten Handkarten eingeben");
         let n = parseInt(cardNumber);
         randomCard(n);
         handcards();
