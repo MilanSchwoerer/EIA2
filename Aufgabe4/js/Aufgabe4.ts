@@ -218,7 +218,7 @@ namespace Aufgabe4 {
             node.innerHTML = childNodeHTML;
         }
         let HTML: string;
-        let node: HTMLElement = document.getElementById("price<");
+        let node: HTMLElement = document.getElementById("price");
         HTML = " ";
         HTML += (treePrice + ballPrice + candlePrice + tinselPrice + holderPrice + shipmentPrice);
         HTML += " Euro";

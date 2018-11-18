@@ -192,7 +192,7 @@ var Aufgabe4;
             node.innerHTML = childNodeHTML;
         }
         let HTML;
-        let node = document.getElementById("price<");
+        let node = document.getElementById("price");
         HTML = " ";
         HTML += (treePrice + ballPrice + candlePrice + tinselPrice + holderPrice + shipmentPrice);
         HTML += " Euro";
