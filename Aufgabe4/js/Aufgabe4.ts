@@ -7,11 +7,11 @@ namespace Aufgabe4 {
     let candlePrice: number = 0;
     let tinselPrice: number = 0;
     let holderPrice: number = 0;
-    let shipmentPrice: number = 0;
-    let ort: string = "";
-    let strass: string = "";
+    let deliveryPrice: number = 0;
+    let place: string = "";
+    let street: string = "";
     let nummer: string = "";
-    let postleitzahl: string = "";
+    let postcode: string = "";
 
     function writeHTML(): void {
         let node: HTMLElement = document.getElementById("fieldset");
@@ -160,18 +160,18 @@ namespace Aufgabe4 {
             let value: string = target.value;
             let priceIndex: number = parseInt(value.substr(0, 1));
             let childNodeHTML: string;
-            shipmentPrice = delivery[priceIndex].price;
+            deliveryPrice = delivery[priceIndex].price;
             childNodeHTML = "";
             childNodeHTML += "<a>";
             childNodeHTML += " " + value.substr(1);
             childNodeHTML += "</a>";
             node.innerHTML = childNodeHTML;
-            console.log(shipmentPrice);
+            console.log(deliveryPrice);
         }
 
         if (target.id == "streets") {
             let node: HTMLElement = document.getElementById("street");
-            strass = target.value;
+            street = target.value;
             let childNodeHTML: string;
             childNodeHTML = "";
             childNodeHTML += "<a>";
@@ -195,7 +195,7 @@ namespace Aufgabe4 {
 
         if (target.id == "postcodes") {
             let node: HTMLElement = document.getElementById("postcode");
-            postleitzahl = target.value;
+            postcode = target.value;
             let childNodeHTML: string;
             childNodeHTML = "";
             childNodeHTML += "<a>";
@@ -207,7 +207,7 @@ namespace Aufgabe4 {
 
         if (target.id == "places") {
             let node: HTMLElement = document.getElementById("place");
-            ort = target.value;
+            place = target.value;
             let childNodeHTML: string;
             childNodeHTML = "";
             childNodeHTML += "<a>";
@@ -220,15 +220,15 @@ namespace Aufgabe4 {
         let HTML: string;
         let node: HTMLElement = document.getElementById("price");
         HTML = " ";
-        HTML += (treePrice + ballPrice + candlePrice + tinselPrice + holderPrice + shipmentPrice);
+        HTML += (treePrice + ballPrice + candlePrice + tinselPrice + holderPrice + deliveryPrice);
         HTML += " Euro";
         node.innerHTML = HTML;
 
     }
 
     function checkInputs(): void {
-        console.log("lul");
-        if (treePrice == 0 || ballPrice == 0 || candlePrice == 0 || tinselPrice == 0 || holderPrice == 0 || shipmentPrice == 0 || ort == "" || nummer == "" || postleitzahl == "" || strass == "")
+        console.log("Error");
+        if (treePrice == 0 || ballPrice == 0 || candlePrice == 0 || tinselPrice == 0 || holderPrice == 0 || deliveryPrice == 0 || place == "" || nummer == "" || postcode == "" || street == "")
          document.getElementById("buttonCheck").innerHTML = "Bitte prüfen sie ihre Angaben!"; 
         else {
             document.getElementById("buttonCheck").innerHTML = "";

@@ -7,11 +7,11 @@ var Aufgabe4;
     let candlePrice = 0;
     let tinselPrice = 0;
     let holderPrice = 0;
-    let shipmentPrice = 0;
-    let ort = "";
-    let strass = "";
+    let deliveryPrice = 0;
+    let place = "";
+    let street = "";
     let nummer = "";
-    let postleitzahl = "";
+    let postcode = "";
     function writeHTML() {
         let node = document.getElementById("fieldset");
         let childNodeHTML;
@@ -143,17 +143,17 @@ var Aufgabe4;
             let value = target.value;
             let priceIndex = parseInt(value.substr(0, 1));
             let childNodeHTML;
-            shipmentPrice = Aufgabe4.delivery[priceIndex].price;
+            deliveryPrice = Aufgabe4.delivery[priceIndex].price;
             childNodeHTML = "";
             childNodeHTML += "<a>";
             childNodeHTML += " " + value.substr(1);
             childNodeHTML += "</a>";
             node.innerHTML = childNodeHTML;
-            console.log(shipmentPrice);
+            console.log(deliveryPrice);
         }
         if (target.id == "streets") {
             let node = document.getElementById("street");
-            strass = target.value;
+            street = target.value;
             let childNodeHTML;
             childNodeHTML = "";
             childNodeHTML += "<a>";
@@ -173,7 +173,7 @@ var Aufgabe4;
         }
         if (target.id == "postcodes") {
             let node = document.getElementById("postcode");
-            postleitzahl = target.value;
+            postcode = target.value;
             let childNodeHTML;
             childNodeHTML = "";
             childNodeHTML += "<a>";
@@ -183,7 +183,7 @@ var Aufgabe4;
         }
         if (target.id == "places") {
             let node = document.getElementById("place");
-            ort = target.value;
+            place = target.value;
             let childNodeHTML;
             childNodeHTML = "";
             childNodeHTML += "<a>";
@@ -194,13 +194,13 @@ var Aufgabe4;
         let HTML;
         let node = document.getElementById("price");
         HTML = " ";
-        HTML += (treePrice + ballPrice + candlePrice + tinselPrice + holderPrice + shipmentPrice);
+        HTML += (treePrice + ballPrice + candlePrice + tinselPrice + holderPrice + deliveryPrice);
         HTML += " Euro";
         node.innerHTML = HTML;
     }
     function checkInputs() {
-        console.log("lul");
-        if (treePrice == 0 || ballPrice == 0 || candlePrice == 0 || tinselPrice == 0 || holderPrice == 0 || shipmentPrice == 0 || ort == "" || nummer == "" || postleitzahl == "" || strass == "")
+        console.log("Error");
+        if (treePrice == 0 || ballPrice == 0 || candlePrice == 0 || tinselPrice == 0 || holderPrice == 0 || deliveryPrice == 0 || place == "" || nummer == "" || postcode == "" || street == "")
             document.getElementById("buttonCheck").innerHTML = "Bitte prüfen sie ihre Angaben!";
         else {
             document.getElementById("buttonCheck").innerHTML = "";
