@@ -16,7 +16,7 @@ var Aufgabe4;
         let node = document.getElementById("fieldset");
         let childNodeHTML;
         childNodeHTML = "<h3>Baumart</h3>";
-        childNodeHTML += "<select name='Select' id='tree'>";
+        childNodeHTML += "<select name='Select' id='trees'>";
         for (let i = 0; i < Aufgabe4.tree.length; i++) {
             childNodeHTML += "<option value='" + i + Aufgabe4.tree[i].name + "'>" + Aufgabe4.tree[i].name + "</option>";
         }
@@ -73,7 +73,7 @@ var Aufgabe4;
     }
     function handleChange(_event) {
         let target = _event.target;
-        if (target.id == "tree") {
+        if (target.id == "trees") {
             let node = document.getElementById("tree");
             let value = target.value;
             let priceIndex = parseInt(value.substr(0, 1));

@@ -18,7 +18,7 @@ namespace Aufgabe4 {
         let childNodeHTML: string;
 
         childNodeHTML = "<h3>Baumart</h3>";
-        childNodeHTML += "<select name='Select' id='tree'>";
+        childNodeHTML += "<select name='Select' id='trees'>";
         for (let i: number = 0; i < tree.length; i++) {
             childNodeHTML += "<option value='" + i + tree[i].name + "'>" + tree[i].name + "</option>";
         }
@@ -86,7 +86,7 @@ namespace Aufgabe4 {
     function handleChange(_event: Event): void {
         let target: HTMLInputElement = <HTMLInputElement>_event.target;
 
-        if (target.id == "tree") {
+        if (target.id == "trees") {
             let node: HTMLElement = document.getElementById("tree");
             let value: string = target.value;
             let priceIndex: number = parseInt(value.substr(0, 1));
