@@ -6,7 +6,7 @@ namespace L06_SendData {                    //
     if (port == undefined)                  //Falls der Port nicht definiert ist,
         port = 8100;                        //soll er die nummer 8100 haben (verbindet Heroku mit EIA2)
 
-    let server: Http.Server = Http.createServer();      //variable server wird als typ Http.Server und wird als Http.creatserver Funktion gleichgesetzt
+    let server: Http.Server = Http.createServer();      //variable server wird als typ Http.Server und wird als Http.createserver Funktion gleichgesetzt
     server.addListener("request", handleRequest);       //Fügt einen Listener hinzu der dem Händler bescheid gibt, wenn handleRequest ausgelöst wurde
     server.addListener("listening", handleListen);      //solange der Käufer auf die funktion zugreift, sieht der Händler das.
     server.listen(port);                                //schaut zu was für ein Port verwendet wird. (8100)

@@ -6,7 +6,7 @@ var L06_SendData;
     let port = process.env.PORT; //Stellt den PORT als number ein zum Heroku server  
     if (port == undefined)
         port = 8100; //soll er die nummer 8100 haben (verbindet Heroku mit EIA2)
-    let server = Http.createServer(); //variable server wird als typ Http.Server und wird als Http.creatserver Funktion gleichgesetzt
+    let server = Http.createServer(); //variable server wird als typ Http.Server und wird als Http.createserver Funktion gleichgesetzt
     server.addListener("request", handleRequest); //F�gt einen Listener hinzu der dem H�ndler bescheid gibt, wenn handleRequest ausgel�st wurde
     server.addListener("listening", handleListen); //solange der K�ufer auf die funktion zugreift, sieht der H�ndler das.
     server.listen(port); //schaut zu was f�r ein Port verwendet wird. (8100)

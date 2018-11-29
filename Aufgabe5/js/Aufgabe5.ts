@@ -1,6 +1,6 @@
 namespace Aufgabe5 {
 
-window.addEventListener("load", init);
+    window.addEventListener("load", init);
 
     let treesboolean: boolean = false;
     let holderboolean: boolean = false;
