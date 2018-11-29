@@ -16,13 +16,14 @@ namespace L06_SendData {                    //
     }
 
     function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {  //erstellt eine Funktion die bei einer Http.Incomingmessage, eine Http.ServerResponse zurück schickt
-        console.log("I hear voices!");              // gibt in der Console "I hear voices!" aus
+        console.log("I hear voices!");                       // gibt in der Console "I hear voices!" aus
+                    
 
         _response.setHeader("content-type", "text/html; charset=utf-8");        //setzt in den HTML header "content-type" und text/html; charset=utf-8
         _response.setHeader("Access-Control-Allow-Origin", "*");                //Access-Control-Allow-Origin wird auch in den Header gesetzt, damit die antwort des Codes mit dem Nutzer geteilt wird.
 
         _response.write(_request.url);          //gibt bei _response.write eine angefragte URL aus             
-        
+        console.log(_request.url);
         _response.end();                        //beendet die schleife der _response
     }
 }
