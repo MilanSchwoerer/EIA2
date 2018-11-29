@@ -183,7 +183,7 @@ window.addEventListener("load", init);
             alert(prompt);
         }
         else {
-            alert("Alles in Ordnung!");
+            alert("Alles ausgewählt!");
         }
 
     }

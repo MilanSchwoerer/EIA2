@@ -158,7 +158,7 @@ var Aufgabe5;
             alert(prompt);
         }
         else {
-            alert("Alles in Ordnung!");
+            alert("Alles ausgewählt!");
         }
     }
 })(Aufgabe5 || (Aufgabe5 = {}));
