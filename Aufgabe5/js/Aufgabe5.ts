@@ -70,7 +70,7 @@ window.addEventListener("load", init);
             _fieldset.appendChild(input);
             input.setAttribute("price", _heteroPredef.price.toString());
             input.setAttribute("value", "0");
-            input.setAttribute("pattern", "[0-9]{1,}");
+            input.setAttribute("pattern", "[0-9]{1}");
             input.setAttribute("name", _heteroPredef.name);
             input.setAttribute("category", _key);
             p.innerText = _heteroPredef.name;
