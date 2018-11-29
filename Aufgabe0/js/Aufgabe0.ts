@@ -10,14 +10,14 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 namespace Aufgabe0 {
 
 
-    function box() {
-        var name = prompt("Wie heiﬂt du?");
+    function box(): void {
+        var name: string = prompt("Wie heiﬂt du?");
         var node: HTMLElement = document.getElementById("content");
         node.innerHTML += "Hallo ";
         node.innerHTML += name;
         node.innerHTML += " ,wie geht es dir?";
-        console.log("Hey", name, ",wie geht es dir")
+        console.log("Hey", name, ",wie geht es dir");
     }
 
-    document.addEventListener('DOMContentLoaded', box);
+    document.addEventListener("DOMContentLoaded", box);
 }

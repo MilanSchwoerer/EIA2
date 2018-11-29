@@ -16,6 +16,6 @@ var Aufgabe0;
         node.innerHTML += " ,wie geht es dir?";
         console.log("Hey", name, ",wie geht es dir");
     }
-    document.addEventListener('DOMContentLoaded', box);
+    document.addEventListener("DOMContentLoaded", box);
 })(Aufgabe0 || (Aufgabe0 = {}));
 //# sourceMappingURL=Aufgabe0.js.map
