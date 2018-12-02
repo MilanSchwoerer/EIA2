@@ -72,8 +72,8 @@ namespace Aufgabe6 {
             let input: HTMLInputElement = document.createElement("input");
             _fieldset.appendChild(input);
             input.setAttribute("price", _heteroPredef.price.toString());
-            input.setAttribute("value", "0");
-            input.setAttribute("stepper", "[0-9]{1,}");
+            input.setAttribute("type", "number");
+            input.setAttribute("stepper", "{1} [0-9]");
             input.setAttribute("name", _key + _heteroPredef.name);
             input.setAttribute("category", _key);
             p.innerText = _heteroPredef.name;
