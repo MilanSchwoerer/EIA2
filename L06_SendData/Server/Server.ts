@@ -5,9 +5,6 @@ namespace L06_SendData {
 
     console.log("Starting server");         //Consolelog wird ausgegeben mit der Nachricht "Starting server"
 
-    interface Product {
-        [key: string]: number;
-    }
     let port: number = process.env.PORT;    //Stellt den PORT als number ein zum Heroku server  
     if (port == undefined)                  //Falls der Port nicht definiert ist,
         port = 8100;                        //soll er die nummer 8100 haben (verbindet Heroku mit EIA2)
@@ -31,17 +28,12 @@ namespace L06_SendData {
 
         // _response.write(_request.url);          //gibt bei _response.write eine angefragte URL aus             
         console.log(_request.url);
-        let url: Product = Url.parse(_request.url, true).query;
-        console.log(url);
 
 
-        for (let key in url) {
 
-            console.log(url[key]);
-            console.log(key);
-
-            _response.write(key + " = " + url[key] + "<br>");
-        }
+        let url: Url.Url = Url.parse(_request.url, true);
+        for (let key in url.query)
+            _response.write(key + ":" + url.query[key] + "<br/>");
 
         _response.end();                        //beendet die schleife der _response
     }
