@@ -48,7 +48,7 @@ namespace Aufgabe6 {
 
     function createInnerFieldset(_heteroPredef: Product, _fieldset: Element, _key: string): void {
 
-        if (_key == "tree" || _key == "holder" || _key == "shipment") {
+        if (_key == "tree" || _key == "holder" || _key == "delivery") {
             let forID: number = _fieldset.childNodes.length;
 
             let label: HTMLElement = document.createElement("label");
@@ -101,10 +101,10 @@ namespace Aufgabe6 {
             target.setAttribute("hiddenvalue", "on");
         }
 
-        if (target.name == "radioshipment") {
+        if (target.name == "radiodelivery") {
             deliveryboolean = true;
-            for (let i: number = 0; i < data["shipment"].length; i++) {
-                let dom: HTMLElement = document.getElementById("shipment" + i);
+            for (let i: number = 0; i < data["delivery"].length; i++) {
+                let dom: HTMLElement = document.getElementById("delivery" + i);
                 dom.setAttribute("hiddenvalue", "off");
             }
             target.setAttribute("hiddenvalue", "on");
@@ -120,7 +120,7 @@ namespace Aufgabe6 {
         for (let i: number = 0; i < articles.length; i++) {
             let article: HTMLInputElement = articles[i];
             let articleName: string = article.getAttribute("name");
-            if (articleName == "radiotree" || articleName == "radioholder" || articleName == "radioshipment") {
+            if (articleName == "radiotree" || articleName == "radioholder" || articleName == "radiodelivery") {
                 articleName = article.getAttribute("hiddenName");
             }
 
@@ -129,7 +129,7 @@ namespace Aufgabe6 {
             let articlePrice: number = Number(article.getAttribute("price"));
             if (articleValue > 0 || article.getAttribute("hiddenvalue") == "on") {
                 let articleCategory: string = article.getAttribute("category");
-                if (articleCategory == "tree" || articleCategory == "holder" || articleCategory == "shipment") {
+                if (articleCategory == "tree" || articleCategory == "holder" || articleCategory == "delivery") {
                     articleValue = 1;
                 }
                 let price: number = articleValue * articlePrice;

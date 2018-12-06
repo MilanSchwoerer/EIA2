@@ -40,7 +40,7 @@ var Aufgabe6;
         form.innerHTML += "<button type=submit>Submit</button>";
     }
     function createInnerFieldset(_heteroPredef, _fieldset, _key) {
-        if (_key == "tree" || _key == "holder" || _key == "shipment") {
+        if (_key == "tree" || _key == "holder" || _key == "delivery") {
             let forID = _fieldset.childNodes.length;
             let label = document.createElement("label");
             _fieldset.appendChild(label);
@@ -87,10 +87,10 @@ var Aufgabe6;
             }
             target.setAttribute("hiddenvalue", "on");
         }
-        if (target.name == "radioshipment") {
+        if (target.name == "radiodelivery") {
             deliveryboolean = true;
-            for (let i = 0; i < Aufgabe6.data["shipment"].length; i++) {
-                let dom = document.getElementById("shipment" + i);
+            for (let i = 0; i < Aufgabe6.data["delivery"].length; i++) {
+                let dom = document.getElementById("delivery" + i);
                 dom.setAttribute("hiddenvalue", "off");
             }
             target.setAttribute("hiddenvalue", "on");
@@ -105,14 +105,14 @@ var Aufgabe6;
         for (let i = 0; i < articles.length; i++) {
             let article = articles[i];
             let articleName = article.getAttribute("name");
-            if (articleName == "radiotree" || articleName == "radioholder" || articleName == "radioshipment") {
+            if (articleName == "radiotree" || articleName == "radioholder" || articleName == "radiodelivery") {
                 articleName = article.getAttribute("hiddenName");
             }
             let articleValue = Number(article.getAttribute("value"));
             let articlePrice = Number(article.getAttribute("price"));
             if (articleValue > 0 || article.getAttribute("hiddenvalue") == "on") {
                 let articleCategory = article.getAttribute("category");
-                if (articleCategory == "tree" || articleCategory == "holder" || articleCategory == "shipment") {
+                if (articleCategory == "tree" || articleCategory == "holder" || articleCategory == "delivery") {
                     articleValue = 1;
                 }
                 let price = articleValue * articlePrice;

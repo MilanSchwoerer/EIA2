@@ -1,7 +1,7 @@
 var Aufgabe6;
 (function (Aufgabe6) {
     Aufgabe6.data = {
-        "trees": [
+        "tree": [
             { name: "Nordmantanne (50 Euro)", price: 50 },
             { name: "Fichte (40 Euro)", price: 40 }
         ],

@@ -8,7 +8,7 @@ namespace Aufgabe6 {
     }
     export let data: Category
         = {
-            "trees": [
+            "tree": [
                 { name: "Nordmantanne (50 Euro)", price: 50 },
                 { name: "Fichte (40 Euro)", price: 40 }
                 ],    
