@@ -7,7 +7,7 @@ namespace DatabaseClient {
         console.log("Init");
         let insertButton: HTMLButtonElement = <HTMLButtonElement>document.getElementById("insert");
         let refreshButton: HTMLButtonElement = <HTMLButtonElement>document.getElementById("refresh");
-        let findButton: HTMLButtonElement = <HTMLButtonElement>document.getElementById("findbutton");
+        let findButton: HTMLButtonElement = <HTMLButtonElement>document.getElementById("find");
         insertButton.addEventListener("click", insert);
         refreshButton.addEventListener("click", refresh);
         findButton.addEventListener("click", find);
@@ -29,7 +29,7 @@ namespace DatabaseClient {
     }
 
     function find(_event: Event): void {
-        let search: HTMLInputElement = <HTMLInputElement>document.getElementById("findbutton");
+        let search: HTMLInputElement = <HTMLInputElement>document.getElementById("number");
         let query: string = "command=find";
         query += "&matrikel=" + search.value;
         console.log(query);
