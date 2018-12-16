@@ -26,7 +26,7 @@ var DatabaseClient;
         sendRequest(query, handleFindResponse);
     }
     function find(_event) {
-        let search = document.getElementById("matnumber");
+        let search = document.getElementById("findbutton");
         let query = "command=find";
         query += "&matrikel=" + search.value;
         console.log(query);
