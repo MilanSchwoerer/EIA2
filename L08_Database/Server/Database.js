@@ -13,7 +13,7 @@ let students;
 if (process.env.NODE_ENV == "production") {
     //    databaseURL = "mongodb://username:password@hostname:port/database";
     databaseURL = "mongodb://testuser:password123@ds141024.mlab.com:41024/eia2database";
-    databaseName = "EIA2";
+    databaseName = "eia2database";
 }
 // try to connect to database, then activate callback "handleConnect" 
 Mongo.MongoClient.connect(databaseURL, handleConnect);
