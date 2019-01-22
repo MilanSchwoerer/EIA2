@@ -1,10 +1,10 @@
 namespace Aufgabe11 {
-     window.addEventListener("load", init);
+    window.addEventListener("load", init);
     export let crc2: CanvasRenderingContext2D;
     let sun: Sun;
     let bg: Background;
     let bgImg: any;
-    let allObjects: BaseStats[] = [];
+    let allObjects: baseStats[] = [];
 
     function init(_event: Event): void {
         console.log("Canvas started");
@@ -17,7 +17,7 @@ namespace Aufgabe11 {
 
 
         for (let i: number = 0; i < 15; i++) {
-            let child: Children = new Children();
+            let child: children = new children();
             child.x = crc2.canvas.width;
             child.y = Math.random() * crc2.canvas.height + 150;
             child.dx = Math.random() - 10;

@@ -1,6 +1,6 @@
 namespace Aufgabe11 {
 
-    export class BaseStats {
+    export class baseStats {
         x: number;
         y: number;
         color: string;
@@ -8,7 +8,7 @@ namespace Aufgabe11 {
         draw(): void { }
     }
 
-    export class Movement extends BaseStats {
+    export class movement extends baseStats {
         dx: number;
         dy: number;
         move(): void {
@@ -17,7 +17,7 @@ namespace Aufgabe11 {
         }
     }
 
-    export class Cloud extends Movement {
+    export class Cloud extends movement {
         draw(): void {
             crc2.strokeStyle = "#ffffff";
             crc2.fillStyle = this.color;
@@ -26,13 +26,13 @@ namespace Aufgabe11 {
             crc2.arc(this.x, this.y, 7, 0, 2 * Math.PI);
             crc2.arc(this.x + 10, this.y + 5, 7, 0, 2 * Math.PI);
             crc2.arc(this.x + 6, this.y - 4, 7, 0, 2 * Math.PI);
-            crc2.closePath();
+            crc2.closePath
             crc2.stroke();
             crc2.fill();
         }
     }
 
-    export class Sun extends BaseStats {
+    export class Sun extends baseStats {
         draw(): void {
             crc2.fillStyle = this.color;
             crc2.strokeStyle = this.color;
@@ -45,7 +45,7 @@ namespace Aufgabe11 {
         }
     }
 
-    export class Tree extends BaseStats {
+    export class Tree extends baseStats {
         color2: string;
         draw(): void {
             crc2.fillStyle = this.color;
@@ -77,7 +77,7 @@ namespace Aufgabe11 {
         }
 
     }
-    export class Background extends BaseStats {
+    export class Background extends baseStats {
         draw(): void {
             let width: number = crc2.canvas.width;
             let height: number = crc2.canvas.height;
@@ -108,19 +108,19 @@ namespace Aufgabe11 {
 
         }
     }
-    export class Snowflakes extends Movement {
+    export class Snowflakes extends movement {
         draw(): void {
             crc2.strokeStyle = "#ffffff";
             crc2.lineWidth = 2;
             crc2.beginPath();
             crc2.moveTo(this.x, this.y - 4);
             crc2.lineTo(this.x, this.y + 4);
-            crc2.closePath();
+            crc2.closePath
             crc2.stroke();
             crc2.beginPath();
             crc2.moveTo(this.x - 4, this.y);
             crc2.lineTo(this.x + 4, this.y);
-            crc2.closePath();
+            crc2.closePath
             crc2.stroke();
         }
         move(): void {
@@ -133,7 +133,7 @@ namespace Aufgabe11 {
         }
     }
 
-    export class Children extends Movement {
+    export class children extends movement {
         state: string;
         draw(): void {
             if (this.state == "ridedown") {

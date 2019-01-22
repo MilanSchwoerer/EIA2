@@ -1,18 +1,18 @@
 var Aufgabe11;
 (function (Aufgabe11) {
-    class BaseStats {
+    class baseStats {
         move() { }
         draw() { }
     }
-    Aufgabe11.BaseStats = BaseStats;
-    class Movement extends BaseStats {
+    Aufgabe11.baseStats = baseStats;
+    class movement extends baseStats {
         move() {
             this.y += this.dy;
             this.x += this.dx;
         }
     }
-    Aufgabe11.Movement = Movement;
-    class Cloud extends Movement {
+    Aufgabe11.movement = movement;
+    class Cloud extends movement {
         draw() {
             Aufgabe11.crc2.strokeStyle = "#ffffff";
             Aufgabe11.crc2.fillStyle = this.color;
@@ -21,13 +21,13 @@ var Aufgabe11;
             Aufgabe11.crc2.arc(this.x, this.y, 7, 0, 2 * Math.PI);
             Aufgabe11.crc2.arc(this.x + 10, this.y + 5, 7, 0, 2 * Math.PI);
             Aufgabe11.crc2.arc(this.x + 6, this.y - 4, 7, 0, 2 * Math.PI);
-            Aufgabe11.crc2.closePath();
+            Aufgabe11.crc2.closePath;
             Aufgabe11.crc2.stroke();
             Aufgabe11.crc2.fill();
         }
     }
     Aufgabe11.Cloud = Cloud;
-    class Sun extends BaseStats {
+    class Sun extends baseStats {
         draw() {
             Aufgabe11.crc2.fillStyle = this.color;
             Aufgabe11.crc2.strokeStyle = this.color;
@@ -40,7 +40,7 @@ var Aufgabe11;
         }
     }
     Aufgabe11.Sun = Sun;
-    class Tree extends BaseStats {
+    class Tree extends baseStats {
         draw() {
             Aufgabe11.crc2.fillStyle = this.color;
             Aufgabe11.crc2.strokeStyle = this.color;
@@ -66,7 +66,7 @@ var Aufgabe11;
         }
     }
     Aufgabe11.Tree = Tree;
-    class Background extends BaseStats {
+    class Background extends baseStats {
         draw() {
             let width = Aufgabe11.crc2.canvas.width;
             let height = Aufgabe11.crc2.canvas.height;
@@ -93,19 +93,19 @@ var Aufgabe11;
         }
     }
     Aufgabe11.Background = Background;
-    class Snowflakes extends Movement {
+    class Snowflakes extends movement {
         draw() {
             Aufgabe11.crc2.strokeStyle = "#ffffff";
             Aufgabe11.crc2.lineWidth = 2;
             Aufgabe11.crc2.beginPath();
             Aufgabe11.crc2.moveTo(this.x, this.y - 4);
             Aufgabe11.crc2.lineTo(this.x, this.y + 4);
-            Aufgabe11.crc2.closePath();
+            Aufgabe11.crc2.closePath;
             Aufgabe11.crc2.stroke();
             Aufgabe11.crc2.beginPath();
             Aufgabe11.crc2.moveTo(this.x - 4, this.y);
             Aufgabe11.crc2.lineTo(this.x + 4, this.y);
-            Aufgabe11.crc2.closePath();
+            Aufgabe11.crc2.closePath;
             Aufgabe11.crc2.stroke();
         }
         move() {
@@ -118,7 +118,7 @@ var Aufgabe11;
         }
     }
     Aufgabe11.Snowflakes = Snowflakes;
-    class Children extends Movement {
+    class children extends movement {
         draw() {
             if (this.state == "ridedown") {
                 this.drawChild1();
@@ -215,6 +215,6 @@ var Aufgabe11;
             else { }
         }
     }
-    Aufgabe11.Children = Children;
+    Aufgabe11.children = children;
 })(Aufgabe11 || (Aufgabe11 = {}));
 //# sourceMappingURL=classes.js.map
